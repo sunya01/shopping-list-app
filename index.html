@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="hyo" />
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/d5c8155507.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="list">
+      <header class="list__header">Shopping List</header>
+      <ul class="list__items">
+        <li class="item__box">
+          <span class="item__name">아이패드</span>
+          <button class="item__delete--btn">
+            <i class="fas fa-backspace"></i>
+          </button>
+        </li>
+      </ul>
+      <footer class="list__footer">
+        <div class="list__add">
+          <input type="text" class="list__input" /><button
+            class="item__add--btn"
+          >
+            <i class="far fa-plus-square"></i>
+          </button>
+        </div>
+        <div class="list__reset">
+          <button class="list__clear--btn">
+            clear <i class="far fa-trash-alt"></i>
+          </button>
+          <button class="list__undo--btn">
+            undo <i class="fas fa-reply"></i>
+          </button>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
