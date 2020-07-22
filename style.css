@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e4faff;
+  text-align: center;
+}
+
+button {
+  border-style: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "Nanum Pen Script", cursive;
+}
+
+#list {
+  width: 400px;
+  background-color: #d6e2ff;
+  margin: auto;
+  border-radius: 30px;
+  -webkit-box-shadow: 10px 10px 59px 0px rgba(51, 58, 59, 1);
+  -moz-box-shadow: 10px 10px 59px 0px rgba(51, 58, 59, 1);
+  box-shadow: 10px 10px 59px 0px rgba(51, 58, 59, 1);
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 26px;
+}
+
+.list__header {
+  height: 56px;
+  background: rgb(70, 189, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(70, 189, 255, 1) 0%,
+    rgba(192, 184, 252, 1) 100%
+  );
+  color: white;
+  font-size: 30px;
+  padding: 8px;
+  border-radius: 30px 30px 0 0;
+}
+
+.list__items {
+  height: 500px;
+  list-style: none;
+  padding: 10px 30px;
+  color: #68687d;
+  overflow-y: auto;
+}
+
+.item__box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item__delete--btn {
+  font-size: 24px;
+  color: #68687d;
+  transition: all 300ms ease-out;
+}
+
+.item__delete--btn:hover {
+  color: #7d7968;
+  transform: scale(1.1);
+}
+
+.list__footer {
+  height: 100px;
+  background: rgb(70, 189, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(70, 189, 255, 1) 0%,
+    rgba(192, 184, 252, 1) 100%
+  );
+  border-radius: 0 0 30px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.list__add {
+  padding: 10px 5px 5px 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.list__input {
+  width: 85%;
+  height: 30px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.item__add--btn {
+  font-size: 32px;
+  color: white;
+  transition: all 300ms ease-out;
+}
+
+.item__add--btn:hover {
+  color: #68687d;
+  transform: scale(1.1);
+}
+
+.list__clear--btn,
+.list__undo--btn {
+  padding: 6px;
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+  font-size: 22px;
+  transition: all 300ms ease-out;
+}
+
+.list__clear--btn:hover,
+.list__undo--btn:hover {
+  color: #68687d;
+  border-color: #68687d;
+}
