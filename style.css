@@ -25,6 +25,7 @@ button {
   box-shadow: 10px 10px 59px 0px rgba(51, 58, 59, 1);
   font-family: "Nanum Pen Script", cursive;
   font-size: 26px;
+  transform: translateY(50px);
 }
 
 .list__header {
